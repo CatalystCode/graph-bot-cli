@@ -23,6 +23,7 @@
     "cookie-parser": "^1.4.0",
     "debug": "~2.0.0",
     "docrouter": "^0.7.0",
+    "documentdb-q-promises": "^1.6.0",
     "express": "^4.13.4",
     "express-session": "^1.12.1",
     "googleapis": "^2.1.7",
@@ -32,9 +33,9 @@
     "nconf": "^0.8.4",
     "passport": "^0.3.2",
     "passport-google-oauth": "^0.2.0",
+    "qnamaker-client": "git+https://git@github.com/CatalystCode/qnamaker-client.git",
     "string": "^3.3.1",
     "string_format": "0.0.6",
-    "validator": "^4.5.2",
-    "qnamaker-client": "git+https://git@github.com/CatalystCode/qnamaker-client.git"
+    "validator": "^4.5.2"
   }
 }
