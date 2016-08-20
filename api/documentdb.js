@@ -3,9 +3,10 @@ var api = { console: { autoLoad: true } };
 var express = require('express'),
   router = api.router = express.Router(),
   docRouter = require('docrouter').docRouter,
+  config = require('../config'),
   DocumentClientQ = require('documentdb-q-promises').DocumentClientWrapper,
-  clientQ = new DocumentClientQ('https://mshealthbot.documents.azure.com:443/',
-    { masterKey: 'asF2eiYnoKCCQBL5w5AzYf3lYpUDCSmhGd67pIDVzNgvaQv8xoKEItOVVbFhmCM6wWNrYJci3sL0dOZHN8JNJg==' });
+  clientQ = new DocumentClientQ(config.documentdb.account_url,
+    { masterKey: config.documentdb.master_key });
 
 
 module.exports = api;

@@ -82,6 +82,11 @@ var bot_iframe_secret = nconfig.get('BOT_IFRAME_SECRET');
 // app Id
 var bot_app_id = nconfig.get('BOT_APP_ID');
 
+// DOCUMENTDB
+ 
+var documentdb_accounr_url = nconfig.get('DOCUMENTDB_ACCOUNT_URL');
+var documentdb_master_key = nconf.get('DOCUMENTDB_MASTER_KEY');
+
 var config = {
     auth: {
         google: {
@@ -138,6 +143,10 @@ var config = {
             handle: bot_iframe_handle,
             secret: bot_iframe_secret
         }
+      },
+      documentdb: {
+          account_url:documentdb_accounr_url,
+          master_key:documentdb_master_key
       }
 };
 
