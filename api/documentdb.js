@@ -64,6 +64,7 @@ docRouter(router, "/api/documentdb", function (router) {
       params: {
         "database": {
           "short": "d",
+          "defaultEnvVar":"database",
           "type": "string",
           "style": "query",
           required: true
@@ -108,6 +109,7 @@ docRouter(router, "/api/documentdb", function (router) {
       params: {
         "database": {
           "short": "d",
+          "defaultEnvVar":"database",
           "type": "string",
           "style": "query",
           required: true
@@ -122,5 +124,4 @@ docRouter(router, "/api/documentdb", function (router) {
       response: { representations: ['application/json'] }
 
     });
-
 });
