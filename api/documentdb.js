@@ -103,7 +103,7 @@ docRouter(router, "/api/documentdb", function (router) {
     {
       id: 'documentdb_collection',
       name: 'collection',
-      usage: 'documentdb collection -d[database] -c [collection name]',
+      usage: 'documentdb collection -d [database] -c [collection name]',
       example: 'documentdb collection tokens',
       doc: 'Get all documents of a collection',
       params: {
